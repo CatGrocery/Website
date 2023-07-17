@@ -144,7 +144,7 @@
                 <div class="row row-cols-1 row-cols-lg-2 justify-content-center">
                   <!----------最新公告------------>
                   <div class="col mb-3">
-                      <div class="common-frame card h-100 announcement">
+                      <div class="common-frame card h-100 announcement d-flex flex-column">
                         <div class="row title-row">
                             <div class="col title-name">
                                 <h2 style="white-space: nowrap;">最新公告</h2>
@@ -154,8 +154,8 @@
                             </div>
                             <hr class="title-hr">
                         </div>
-                        <div class="container-fluid ">
-                            <ul style="list-style-type: none;">
+                        <div class="container-fluid flex-grow-1 ">
+                            <ul style="list-style-type: none;" >
                                 <li>
                                     <a href="index.html">
                                         <div class="announcement-item">
@@ -229,16 +229,17 @@
 
                   <!----------服務項目------------>
                   <div class="col mb-3">
-                      <div class="card h-100 common-frame server">
-                        <div class="row title-row">
+                      <div class="h-100 common-frame server d-flex">
+                        <div class="container-fluid d-flex flex-column">
+                          <div class="row title-row">
                             <div class="col title-name">
                                 <h2 style="white-space: nowrap;">服務項目</h2>
                             </div>
                             <hr class="title-hr">
-                        </div>
-                        <div class="container-fluid">
-                            <div class="row row-cols-4 g-4">
-                                <div class="col">
+                          </div>
+
+                            <div class="row row-cols-4 flex-grow-1 py-3">
+                                <div class="col ">
                                     <div class="card text-center">
                                         <img src="image/icon/point-card_icon.png" class="card-img-top w-75">
                                         <div class="card-body  pt-1">
@@ -304,6 +305,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                   </div>
 
