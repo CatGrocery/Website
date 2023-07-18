@@ -180,6 +180,9 @@ body{
     vertical-align: top;
     white-space: normal;
 }
+.announcement-content {
+    min-height: 75vh;
+}
 
 /*//////////footer//////////*/
 .copyright{
