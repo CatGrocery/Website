@@ -118,7 +118,6 @@ body{
 /*//////////快速發卡//////////*/
 .point-card .card{
     border: none;
-    margin-bottom: -1.5em;
 }
 .point-card .card-body{
     padding: 3px;
@@ -181,7 +180,7 @@ body{
     white-space: normal;
 }
 .announcement-content {
-    min-height: 75vh;
+    min-height: 50vh;
 }
 
 /*//////////footer//////////*/
