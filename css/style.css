@@ -9,16 +9,12 @@ body{
 }
 
 @media (min-width: 992px) {
-    /*.server {
-        height: 360px;
-    }
-    .announcement {
-        height: 360px;
-    }*/
     .row-cols-lg-8 > * {
         flex: 0 0 12.5%;
         max-width: 12.5%;
     }
+    .w-lg-85 { width: 85%!important; }
+    .w-lg-15 { width: 15%!important; }
 }
 
 /*//////////每個區塊的框框//////////*/
@@ -118,6 +114,7 @@ body{
 /*//////////快速發卡//////////*/
 .point-card .card{
     border: none;
+    align-items: center;
 }
 .point-card .card-body{
     padding: 3px;
@@ -139,19 +136,20 @@ body{
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-
+}
+.point-card img{
+    width: 85%;
 }
 
 /*//////////快速發卡//////////*/
 .top-up .card{
     border: none;
-    margin-bottom: -1em;
     align-items: center;
 }
 .top-up .card-body{
     padding: 3px;
 }
-.top-up img{
+.-top-up img{
     width: 85%;
 }
 .top-up .card:hover{
@@ -181,6 +179,12 @@ body{
 }
 .announcement-content {
     min-height: 50vh;
+}
+
+.point-card .page-title-name{
+    text-align: center;
+    vertical-align: top;
+    white-space: normal;
 }
 
 /*//////////footer//////////*/
