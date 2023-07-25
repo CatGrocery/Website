@@ -6,6 +6,7 @@ a {
 
 body{
     font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+    font-size: clamp(1rem,1vw,1.5rem);
 }
 
 @media (min-width: 992px) {
@@ -17,6 +18,17 @@ body{
     .w-lg-15 { width: 15%!important; }
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+body {
+    display: flex; /*使物件依序排列*/
+    flex-direction: column; /*使物件垂直排列*/
+  }
+.wrapper {
+    flex-grow: 1; /*可佔滿垂直剩餘的空間*/
+  }
 /*//////////每個區塊的框框//////////*/
 .common-frame{
     background: #ffffff;
@@ -58,7 +70,7 @@ body{
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
-/*//////////最新公告//////////*/
+/*//////////首頁-最新公告//////////*/
 
 .announcement-date {
     width: 40%;
@@ -94,7 +106,7 @@ body{
     cursor: pointer;
 }
 
-/*//////////服務項目//////////*/
+/*//////////首頁-服務項目//////////*/
 .server .card-body{
     padding: 3px;
 }
@@ -111,7 +123,7 @@ body{
     transform: scale(1.1);
 }
 
-/*//////////快速發卡//////////*/
+/*//////////首頁-快速發卡//////////*/
 .point-card .card{
     border: none;
     align-items: center;
@@ -141,7 +153,7 @@ body{
     width: 85%;
 }
 
-/*//////////快速發卡//////////*/
+/*//////////首頁-遊戲代儲//////////*/
 .top-up .card{
     border: none;
     align-items: center;
@@ -181,7 +193,8 @@ body{
     min-height: 50vh;
 }
 
-.point-card .page-title-name{
+/*//////////頁面通用//////////*/
+.page-title-name{
     text-align: center;
     vertical-align: top;
     white-space: normal;
